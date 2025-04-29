@@ -2,8 +2,7 @@
 <fuse-loading-bar></fuse-loading-bar>
 
 <div
-    class="flex w-full flex-auto justify-center bg-gray-200 dark:bg-card sm:p-4 md:p-8"
->
+    class="flex w-full flex-auto justify-center bg-gray-200 dark:bg-card sm:p-4 md:p-8">
     <!-- Navigation -->
     @if (isScreenSmall) {
         <fuse-vertical-navigation
@@ -11,8 +10,7 @@
             [mode]="'over'"
             [name]="'mainNavigation'"
             [navigation]="navigation.default"
-            [opened]="false"
-        >
+            [opened]="false">
             <!-- Navigation header hook -->
             <ng-container fuseVerticalNavigationContentHeader>
                 <!-- Logo -->
@@ -25,12 +23,10 @@
 
     <!-- Wrapper -->
     <div
-        class="flex min-w-0 max-w-360 flex-auto flex-col items-center overflow-hidden shadow-2xl dark:shadow-none sm:rounded-xl"
-    >
+        class="flex min-w-0 max-w-360 flex-auto flex-col items-center overflow-hidden shadow-2xl dark:shadow-none sm:rounded-xl">
         <!-- Header -->
         <div
-            class="bg-card relative z-49 flex h-16 w-full flex-0 items-center border-b px-4 dark:bg-default sm:h-20 md:px-6 print:hidden"
-        >
+            class="bg-card relative z-49 flex h-16 w-full flex-0 items-center border-b px-4 dark:bg-default sm:h-20 md:px-6 print:hidden">
             @if (!isScreenSmall) {
                 <!-- Logo -->
                 <div class="mx-2 flex items-center lg:mr-8">

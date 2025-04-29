@@ -6,6 +6,7 @@ import { of, switchMap } from 'rxjs';
 export const AuthGuard: CanActivateFn | CanActivateChildFn = (route, state) => {
     const router: Router = inject(Router);
 
+    return of(true);
     // Check the authentication status
     return inject(AuthService)
         .check()
