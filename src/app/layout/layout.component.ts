@@ -31,7 +31,7 @@ import { ThinLayoutComponent } from './layouts/vertical/thin/thin.component';
     styleUrls: ['./layout.component.scss'],
     encapsulation: ViewEncapsulation.None,
     imports: [
-        ModernLayoutComponent,
+        EmptyLayoutComponent,
     ],
 })
 export class LayoutComponent implements OnInit, OnDestroy {

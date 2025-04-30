@@ -67,15 +67,17 @@ export const appRoutes: Route[] = [
     // Admin routes
     {
         path: '',
-        canActivate: [AuthGuard],
-        canActivateChild: [AuthGuard],
+        canActivate: [NoAuthGuard],
+        canActivateChild: [NoAuthGuard],
         component: LayoutComponent,
-        resolve: {
-            initialData: initialDataResolver
+        data: {
+            layout: 'empty'
         },
         children: [
             {path: 'example', loadChildren: () => import('app/modules/admin/example/example.routes')},
             {path: 'items', loadChildren: () => import('app/modules/n-pos/n-pos.routes')},
+            {path: 'add', loadChildren: () => import('app/modules/n-pos/n-pos.routes')},
+            {path: 'order', loadChildren: () => import('app/modules/n-pos/n-pos.routes')},
         ]
     }
 ];
